@@ -301,6 +301,9 @@ private void createChildDevice(String deviceName, String deviceNumber) {
          		case "rgbSwitch": 
                 		deviceHandlerName = "Child RGB Switch" 
                 	break
+				case "rgbAddressableSwitch":
+						deviceHandlerName = "Child RGB Addressable Switch"
+					break
          		case "generic": 
                 		deviceHandlerName = "Child Generic Sensor" 
                 	break
