@@ -113,8 +113,7 @@ metadata {
 		    state "onrainbow", label:"rainbow", action:"rainbow", icon:"st.illuminance.illuminance.bright", backgroundColor:"##FFFFFF"
         }
 		main(["switch"])
-		details(["switch", "level", "color","red","green","blue","white","cyan",
-			 "magenta","orange","purple","yellow","lastUpdated"])
+		details(["switch", "level", "color","red","green","blue","white","cyan","magenta","orange","purple","yellow","lastUpdated"])
 	}
 }
 
