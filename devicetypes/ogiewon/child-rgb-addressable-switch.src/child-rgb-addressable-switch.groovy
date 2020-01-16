@@ -41,9 +41,9 @@ metadata {
 	command "purple"
 	command "yellow"
 	command "white"
-
-    command "packers"
-    command "rainbow"
+	command "packers"
+	command "rainbow"
+    
 	}
 
 	simulator {
@@ -104,14 +104,14 @@ metadata {
 		    state "offwhite", label:"White", action:"white", icon:"st.illuminance.illuminance.dark", backgroundColor:"#D8D8D8"
 		    state "onwhite", label:"White", action:"white", icon:"st.illuminance.illuminance.bright", backgroundColor:"#FFFFFF"
 		}
-        standardTile("packers", "device.packers", width: 2, height: 2, inactiveLabel: false, canChangeIcon: false) {
-            state "offpackers", label:"Packers", action:"packers", icon:"st.illuminance.illuminance.dark", backgroundColor:"#D8D8D8"
-		    state "onpackers", label:"Packers", action:"packers", icon:"st.illuminance.illuminance.bright", backgroundColor:"##00FF00"
-        }
-        standardTile("rainbow", "device.rainbow", width: 2, height: 2, inactiveLabel: false, canChangeIcon: false) {
-            state "offrainbow", label:"Rainbow", action:"rainbow", icon:"st.illuminance.illuminance.dark", backgroundColor:"#D8D8D8"
-		    state "onrainbow", label:"rainbow", action:"rainbow", icon:"st.illuminance.illuminance.bright", backgroundColor:"##FFFFFF"
-        }
+		standardTile("packers", "device.packers", width: 2, height: 2, inactiveLabel: false, canChangeIcon: false) {
+			state "offpackers", label:"Packers", action:"packers", icon:"st.illuminance.illuminance.dark", backgroundColor:"#D8D8D8"
+			state "onpackers", label:"Packers", action:"packers", icon:"st.illuminance.illuminance.bright", backgroundColor:"##00FF00"
+		}
+		standardTile("rainbow", "device.rainbow", width: 2, height: 2, inactiveLabel: false, canChangeIcon: false) {
+			state "offrainbow", label:"Rainbow", action:"rainbow", icon:"st.illuminance.illuminance.dark", backgroundColor:"#D8D8D8"
+			state "onrainbow", label:"rainbow", action:"rainbow", icon:"st.illuminance.illuminance.bright", backgroundColor:"##FFFFFF"
+		}
 		main(["switch"])
 		details(["switch", "level", "color","red","green","blue","white","cyan","magenta","orange","purple","yellow","lastUpdated"])
 	}
